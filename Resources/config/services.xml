@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services
+        http://symfony.com/schema/dic/services/services-1.0.xsd">
+    <services>
+        <service id="GuikProd\GCPBundle\Bridge\CloudTranslationBridge" class="GuikProd\GCPBundle\Bridge\CloudTranslationBridge" public="false" autoconfigure="true" autowire="true"/>
+        <service alias="GuikProd\GCPBundle\Bridge\CloudTranslationBridge" id="GuikProd\GCPBundle\Bridge\Interfaces\CloudTranslationBridgeInterface" public="false" />
+        <service id="GuikProd\GCPBundle\CloudTranslation\CloudTranslationWarmer" class="GuikProd\GCPBundle\CloudTranslation\CloudTranslationWarmer" public="false" autoconfigure="true" autowire="true"/>
+        <service alias="GuikProd\GCPBundle\CloudTranslation\CloudTranslationWarmer" id="GuikProd\GCPBundle\CloudTranslation\Interfaces\CloudTranslationWarmerInterface" public="false" />
+    </services>
+</container>

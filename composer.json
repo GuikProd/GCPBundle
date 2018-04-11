@@ -1,0 +1,13 @@
+{
+    "name": "guikprod/gcp-bundle",
+    "description": "A bundle which allow to connect your Symfony project to GCP",
+    "type": "bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Loulier Guillaume",
+            "email": "guillaume.loulier@hotmail.fr"
+        }
+    ],
+    "require": {}
+}
